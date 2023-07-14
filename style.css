@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.heading{
+    background-color: orange;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.container1{
+    position: relative;
+    background-color: rgb(245, 71, 71);
+    position: sticky;
+    top: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    font-size: 19px;
+    padding: 15px;
+}
+.head{
+    padding-right: 300px;
+}
+.main{
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 850px;    
+}
+.main div a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+.btnn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
+.btn-login{
+    
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(245, 71, 71);
+    font-size: 19px;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+
+.loginform{
+    width: 350px;
+    padding: 30px;
+    background-color: #fff;
+    position: fixed;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 3px #ccc;
+}
+.showloginform{
+    position: absolute;
+    position: fixed;
+    display: block;
+}
+.loginform h1{
+    margin-bottom: 18px;
+}
+.loginform input{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 35px;
+}
+.loginform button{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+.loginform span{
+    position: absolute;
+    right:30px;
+    top: 35px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.loginform span:hover{
+    color: red;
+}
+
+.meanu{
+    color: white;
+    margin-left: 10px;
+    display: flex;
+}
+.meanucolor{
+    text-decoration: none;
+    background-color: rgb(56, 1, 1);
+    color: white;
+    padding: 4px;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+.meanubar p{
+    
+    margin: 25px;
+}
+.accordion{
+    border: 1px solid rgb(230, 225, 225);
+    border-top:none ;   
+}
+.accord{
+    margin-left: 20px;
+    color: black;
+}
+.item1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 225, 225);
+    padding: 20px;
+}
+.item1 h2 button{
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    position: absolute;  
+}
+.item1 h2{
+    margin-bottom: 25px;
+}
+.item1 i{
+    position: absolute;
+    right: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.item1 i:hover{
+    color: red;
+}
+.item2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(230, 225, 225);
+    border-bottom: 1px solid rgb(230, 225, 225);
+    padding: 10px;
+}
+.item2 h2 button{
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.item2 i{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.item2 i:hover{
+    color: red;
+}
+.item3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(230, 225, 225);
+    border-bottom: 1px solid rgb(230, 225, 225);
+    padding: 10px;
+}
+.item3 h2 button{
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.item3 i{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.item3 i:hover{
+    color: red;
+}
+.pera{
+    display: none;
+}
+.firstheading{
+    position: relative;
+}
+.firstheading p{
+    padding: 10px;
+}
+.courseheading{
+    padding: 5px;
+    background-color:yellow;
+}
+.our{
+    margin: auto;
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+}
+.our h1{
+    text-align: center;
+    font-size: 50px;
+}
+.Cards{
+    overflow: hidden;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    overflow: hidden;
+    background-color: black;
+    color: #fff;
+    padding: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    overflow: hidden;
+    background-color: black;
+    width: 20%;
+    margin: 30px;
+    border: 2px solid blanchedalmond;
+    border-radius: 4px;
+}
+.card-img-top{
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+}
+.card-body{
+    overflow: hidden;
+    padding: 10px;
+    
+}
+.card-body h5{
+    padding: 10px;
+    font-size: 30px;
+}
+.card-body p{
+    padding: 10px;
+    text-align: justify;
+}
+.card-body button{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.feeheading{
+    background-color: rgb(221, 221, 97);
+    padding: 10px;
+}
+.feeheading{
+    padding: 5px;
+    background-color:yellow;
+}
+.fee{
+    margin: auto;
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+}
+.fee h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+/**tagale**/
+
+.accordince{
+    width: 100%;
+    background:black;
+    color: #fff;
+}
+
+.accordince-tab .font{
+    font-size: 16px;
+    background-color:#fff;
+    color: #000000;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid #ddd ;
+    overflow: hidden;
+}
+.accordince-tab > .according-toggle:checked ~ .font i{
+    transform: rotate(180deg);
+    transition: transform .3s;
+    color: red;
+}
+.accordince-tab > .according-toggle{
+    display: none;
+
+}
+
+
+label{
+    cursor: pointer;
+}
+.accordince-tab > label{
+    background-color: #fff;
+    color: black;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 10px;
+   
+}
+.accordince-content p{
+    margin: 30px;
+    text-align: justify;
+    word-spacing: 5px;
+    overflow: hidden;
+}
+.accordince-tab > .accordince-content{
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+}
+.accordince-tab > .according-toggle:checked ~  .accordince-content{
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+.feestructure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 15px;
+}
+.feemain{
+    width: 20%;
+    text-align: center;
+    margin: 20px;
+    border: 3px solid #061ea8;
+    border-radius: 5px;
+}
+.feemain h1{
+    text-align: start;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.feemini{
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    border-bottom :3px solid #061ea8;
+}
+.feemini h1{
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    background-color: aqua;
+}
+.feemini p{
+    padding: 18px 10px;
+}
+
+.ourempoly{
+    text-align: center;
+}
+.ourempoly h1{
+    font-size: 40px;
+    text-decoration: underline;
+    font-style: oblique;
+}
+.ourempoly p{
+    padding: 30px;
+
+}
+
+
+.piccard{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piccardmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.piccardmenu img{
+    border-radius: 50%;
+    
+    width: 60%;
+    padding: 10px;
+}
+.picmini{
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 60%;
+    text-align: justify;
+    padding: 10px;
+}
+.picmini button{
+    margin: 10px 0px;
+    padding: 10px;
+    border: none;
+    background-color: #061ea8;
+    color: aliceblue;
+}
+
+
+.footer{
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+.foot div{
+    padding: 0px 20px;
+}
+.foot div button{
+    padding: 5px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    
+}
+.foot div button:hover{
+    background-color: #000000;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+.footer-icon a{
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.footer-icon a:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
